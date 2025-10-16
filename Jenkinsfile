@@ -8,7 +8,7 @@ pipeline {
         maven 'illyas'      // This uses the tool with the name 'maven'
     }
     environment {
-        AWS_ACCESS_KEY = credentials('AWS_KEY_AKKI')
+        AWS_ACCESS_KEY = credentials('AWS_AKKI_KEY')
         AWS_SECRET_KEY = credentials('AWS_SECRET_OM')
         SSH_PRIVATE_KEY_PATH = "~/.ssh/mujahed.pem"  // Path to your private key
     }
@@ -133,6 +133,7 @@ pipeline {
         }
     }
 }
+
 
 
 
